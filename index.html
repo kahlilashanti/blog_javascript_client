@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Kahlil's Blog Client</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-2.2.3.min.js"></script>
+    <script src="mustache.min.js"></script>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <script id="post-summary" type="x-tmpl-mustache">
+      <h2>
+      <a href="javascript:void(0);" data-id="{{id}}">{{title}}</a>
+      </h2>
+      <hr>
+    </script>
+
+    <script id="post-details" type=x-tmpl-mustache>
+    <a href="javascript:void(0)" id="back">&lt; Back</a>
+    <h1> {{title}}</h1>
+    <p>{{body}}</p>
+    <p>Created On{{created_at}}</p>
+    <hr>
+    </script>
+
+
+    <div id="posts"></div>
+    <div id="single-post"></div>
+
+  </body>
+</html>
